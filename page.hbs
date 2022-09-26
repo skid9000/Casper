@@ -39,6 +39,15 @@ into the {body} tag of the default.hbs template --}}
         {{content}}
     </section>
 
+    {{!-- {{#if comments}} --}}
+        <section class="article-comments gh-canvas">
+            {{!--{{comments}}--}}
+            {{!-- coms (hardcoded) --}}
+                <script data-isso="https://coms.tuto-craft.com/" src="https://coms.tuto-craft.com/js/embed.min.js"></script>
+                <section id="isso-thread"></section>
+        </section>
+    {{!-- {{/if}} --}}
+
 </article>
 </main>
 
